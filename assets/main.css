@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --main-bg: hsl(217, 54%, 11%);   /*(main BG) */
+    --card-bg: hsl(216, 50%, 16%);  /*(card BG) */
+    --line: hsl(215, 32%, 27%);  /*line*/
+    --White: hsl(0, 0%, 100%);
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-bg);
+}
+
+.container {
+    width: 200px;
+    background-color:var(--card-bg);
+    padding: 14px;
+    color: white;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 12px;
+}
+
+header img{
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+
+header{
+    position: relative;
+    max-width: 200px;
+    height: 200px;
+}
+
+.overlap{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Cyan);
+    opacity: 0%;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+
+.overlap:hover{
+    opacity: 50%;
+    transition: .3s ease-in ;
+}
+
+.overlap img{
+    width: 40px;
+    opacity: 1000%;
+}
+
+section p{
+    font-size: 10px;
+    color: var(--Softblue);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-data{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon{
+    width: 9px;
+}
+
+.eth{
+    width: 6px;
+}
+
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: var(--line);
+    margin: 5px 0 6px 0;
+}
+
+.avatar{
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+span{
+    color: white;
+}
+
+.eth-price p{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+h1:hover, span:hover{
+    color: var(--Cyan);
+}
+
